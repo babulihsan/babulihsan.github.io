@@ -45,13 +45,13 @@
 			}
 		}
 
-		var idArticle = getUrlVars("open");
+		var buka = getUrlVars("open");
 
 		$.ajax({
-			url : 'https://conn.alisita.my.id/article/babulihsan/open/',
+			url : 'https://conn.alisita.my.id/article/babulihsan/coba/',
 			method : 'post',
 			data : {
-				'idArticle' : idArticle
+				'open' : buka
 			},
 			success : function(load){
         $('#show').html(load);
